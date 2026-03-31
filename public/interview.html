@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Interview Room</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body class="app-bg">
+  <main class="interview-wrap">
+    <header class="topbar">
+      <h1 id="modeTitle">Interview</h1>
+      <div>
+        <button id="viewReportBtn" class="small-btn">View Report</button>
+        <button id="backBtn" class="small-btn">Dashboard</button>
+      </div>
+    </header>
+
+    <section id="chatBox" class="chat-box"></section>
+
+    <section class="input-bar">
+      <textarea id="answerInput" placeholder="Type your answer here..."></textarea>
+      <button id="submitAnswerBtn">Submit Answer</button>
+      <button id="micBtn" class="hidden">🎤 Start Voice</button>
+    </section>
+    <div id="wave" class="wave hidden"></div>
+  </main>
+
+  <script src="/js/interview.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | AI Interview Bot</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body class="app-bg">
+  <main class="dashboard-wrap">
+    <header class="topbar">
+      <h1>Candidate Dashboard</h1>
+      <button id="logoutBtn" class="small-btn">Logout</button>
+    </header>
+
+    <section class="panel">
+      <h2>1) Upload Resume (PDF/DOCX)</h2>
+      <input id="resumeInput" type="file" accept=".pdf,.docx" />
+      <button id="uploadBtn">Upload Resume</button>
+      <div id="loading" class="loading hidden">Analyzing resume with AI...</div>
+      <p id="uploadMessage" class="message"></p>
+      <pre id="resumePreview" class="preview"></pre>
+    </section>
+
+    <section class="panel">
+      <h2>2) Choose Interview Mode</h2>
+      <div class="mode-grid">
+        <button id="testModeBtn">Test Mode (Text)</button>
+        <button id="liveModeBtn">Live Mode (Voice)</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/dashboard.js"></script>
+</body>
+</html>
