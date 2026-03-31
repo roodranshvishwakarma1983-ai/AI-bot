@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Interview Taking Bot</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+  <section id="landing" class="landing">
+    <canvas id="threeCanvas"></canvas>
+    <div class="overlay-text">
+      <h1>AI Interview Taking Bot</h1>
+      <p>Practice like it is a real interview room.</p>
+    </div>
+  </section>
+
+  <section id="authSection" class="auth hidden">
+    <div class="card">
+      <h2 id="authTitle">Welcome Back</h2>
+      <p class="subtitle">Login or create account to start resume-based interviews.</p>
+
+      <form id="authForm">
+        <input id="name" type="text" placeholder="Full Name" class="hidden" />
+        <input id="email" type="email" placeholder="Email" required />
+        <input id="password" type="password" placeholder="Password" required />
+        <button id="authSubmit" type="submit">Login</button>
+      </form>
+
+      <p class="switch">Don't have an account? <button id="toggleAuth" class="link-btn">Register</button></p>
+      <p id="authMessage" class="message"></p>
+    </div>
+  </section>
+
+  <script src="/js/main.js"></script>
+</body>
+</html>
